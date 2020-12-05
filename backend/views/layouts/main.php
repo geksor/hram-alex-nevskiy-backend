@@ -94,7 +94,7 @@ if (Yii::$app->controller->action->id === 'login') {
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
 
-        <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-messaging.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-messaging.js"></script>
 
         <script>
             // Your web app's Firebase configuration
