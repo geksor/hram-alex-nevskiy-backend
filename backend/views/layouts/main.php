@@ -92,10 +92,9 @@ if (Yii::$app->controller->action->id === 'login') {
         $url = 'https://'.Yii::$app->request->hostName.'/api/chat-subscrib';
         ?>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
 
-        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-messaging.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-messaging.js"></script>
 
         <script>
             // Your web app's Firebase configuration
@@ -111,7 +110,6 @@ if (Yii::$app->controller->action->id === 'login') {
             };
             // Initialize Firebase
             firebase.initializeApp(firebaseConfig);
-            firebase.analytics();
 
             console.log(firebase.messaging.isSupported());
 
