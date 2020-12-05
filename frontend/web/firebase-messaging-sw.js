@@ -1,14 +1,14 @@
-importScripts('https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/6.1.0/firebase-messaging.js');
 
-var firebaseConfig = {
-    apiKey: "AIzaSyD0qcvW_tFguqTa2hm1MyHVHDdaDPwTUig",
-    authDomain: "blagoapp-ab505.firebaseapp.com",
-    databaseURL: "https://blagoapp-ab505.firebaseio.com",
-    projectId: "blagoapp-ab505",
-    storageBucket: "",
-    messagingSenderId: "278659335394",
-    appId: "1:278659335394:web:04a683ed361f3e81"
+const firebaseConfig = {
+    apiKey: "AIzaSyAwC6wFnNJ6Qv9inKd10Ik3gzZhXOuU4xc",
+    authDomain: "hramalexnevsciyapp.firebaseapp.com",
+    projectId: "hramalexnevsciyapp",
+    storageBucket: "hramalexnevsciyapp.appspot.com",
+    messagingSenderId: "209539708545",
+    appId: "1:209539708545:web:e9f2b3abb77a5914a13f80",
+    measurementId: "G-R6SZ2ETQ1E"
 };
 
 firebase.initializeApp(firebaseConfig);

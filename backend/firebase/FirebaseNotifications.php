@@ -12,7 +12,7 @@ class FirebaseNotifications extends BaseObject
     /**
      * @var string the auth_key Firebase cloude messageing server key.
      */
-    public $authKey = 'AAAAQOFkBOI:APA91bG4uQAJD9Fu1K8ISPWKvFhVs5xS8ChhlZax7793gd75tQ76Nsi-LomwfzvCfS-SMyb6MvES0CVgTLLRVNfjUNy3ZQtbrk0BaHn1zijYiFThKYs1umURdDaV0xtyEY_Ut0-Y0phl';
+    public $authKey = 'AAAAMMmKNoE:APA91bGUSZKNREjr4RxWKNbA96vqjk-YA_YFgsxKeMt9ku5NnhT8IJLg3XxgCmHRvvtaIMNJlf3Nmy2ZJtFf4-QCNZh_sESGa8tjpAwRyIjyp25ezEly6YhXkbLlqETZk7ylAW4L9cx7';
     public $timeout = 5;
     public $sslVerifyHost = false;
     public $sslVerifyPeer = false;

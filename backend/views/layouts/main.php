@@ -92,19 +92,21 @@ if (Yii::$app->controller->action->id === 'login') {
         $url = 'https://'.Yii::$app->request->hostName.'/api/chat-subscrib';
         ?>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+
         <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-messaging.js"></script>
 
         <script>
             // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
             var firebaseConfig = {
-                apiKey: "AIzaSyD0qcvW_tFguqTa2hm1MyHVHDdaDPwTUig",
-                authDomain: "blagoapp-ab505.firebaseapp.com",
-                databaseURL: "https://blagoapp-ab505.firebaseio.com",
-                projectId: "blagoapp-ab505",
-                storageBucket: "",
-                messagingSenderId: "278659335394",
-                appId: "1:278659335394:web:04a683ed361f3e81"
+                apiKey: "AIzaSyAwC6wFnNJ6Qv9inKd10Ik3gzZhXOuU4xc",
+                authDomain: "hramalexnevsciyapp.firebaseapp.com",
+                projectId: "hramalexnevsciyapp",
+                storageBucket: "hramalexnevsciyapp.appspot.com",
+                messagingSenderId: "209539708545",
+                appId: "1:209539708545:web:e9f2b3abb77a5914a13f80",
+                measurementId: "G-R6SZ2ETQ1E"
             };
             // Initialize Firebase
             firebase.initializeApp(firebaseConfig);
@@ -113,7 +115,7 @@ if (Yii::$app->controller->action->id === 'login') {
 
             if (firebase.messaging.isSupported()) {
                 const messaging = firebase.messaging();
-                messaging.usePublicVapidKey("BDFaL7H8Q8FBVS8t8rc3ZA0LPyuaky4yr3SnL2KAjqdkaSUXfsMQr3aQuMdhAG-K4sQR_bYtMQECr4baApJFGEI");
+                messaging.usePublicVapidKey("BP2QV12Y0IrkGCsU1DgQrAWzYYImsApzjxqiCBlxpqK4Uu6emwqPVkiox1SQIpU2jn_Jn8BBSrxgzHVgpdMIlD4");
 
                 Notification.requestPermission().then(function(permission) {
                     if (permission === 'granted') {
