@@ -93,6 +93,7 @@ if (Yii::$app->controller->action->id === 'login') {
         ?>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
 
         <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-messaging.js"></script>
 
@@ -110,6 +111,7 @@ if (Yii::$app->controller->action->id === 'login') {
             };
             // Initialize Firebase
             firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
 
             console.log(firebase.messaging.isSupported());
 
