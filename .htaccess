@@ -11,7 +11,7 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # define the app environment variable
-RewriteCond %{REQUEST_URI} !^/((frontend|backend|api)/web|admin|api)
+RewriteCond %{REQUEST_URI} !^/(frontend/web|backend/web|api/web|admin|api)
 RewriteRule ^ - [E=APP:frontend]
 RewriteCond %{REQUEST_URI} (?!^/backend/web)^/admin
 RewriteRule ^ - [E=APP:backend]
