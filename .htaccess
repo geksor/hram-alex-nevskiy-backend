@@ -20,7 +20,7 @@ RewriteRule ^ - [E=APP:api]
 
 # rewrite the URI of the frontend app
 RewriteCond %{ENV:APP} =frontend
-RewriteRule ^(.*)$ frontend/web/$1
+RewriteRule ^ frontend/web%{REQUEST_URI}
 # if a directory or a file exists, use the request directly
 RewriteCond %{ENV:APP} =frontend
 RewriteCond %{REQUEST_FILENAME} !-f
